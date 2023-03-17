@@ -1,0 +1,277 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    color: #222;
+    background-color: rgb(177, 188, 204);
+}
+
+h1 {
+    font-size: 5vw;
+}
+
+h3 {
+    font-size: 3vw;
+}
+
+form {
+    display: table;
+    margin: 0 auto;
+    width: 40vw;
+    background-color: #343a40;
+    border-radius: 15px;
+    color: whitesmoke;
+}
+
+nav {
+    width: 100%;
+}
+
+.navbar-nav li {
+    padding-right: 20px;
+}
+
+.nav-link {
+    font-size: 1.05em !important;
+}
+
+.navbar-brand img {
+    width: 250px;
+}
+
+.carousel-caption {
+    position: absolute;
+    text-shadow: 1px 1px 10px #000;
+    font-size: 8vw;
+}
+
+.lead {
+    text-indent: 30px;
+}
+
+.boxer {
+    width: 58%;
+    margin: 0 auto;
+    height: auto;
+    background-color: #f0f0f0;
+    min-height: 100%;
+    padding-top: 10px;
+}
+
+.alert {
+    margin-bottom: unset;
+}
+
+.table-responsive {
+    border: unset;
+}
+
+
+table td {
+    background-color: white;
+    min-width: 150px;
+}
+
+.social a {
+    font-size: 2em;
+    padding: 15px;
+}
+
+.fa-facebook {
+    color: #3b5998;
+}
+
+.fa-instagram {
+    color: #517fa4;
+}
+
+.fa-twitter {
+    color: #00aced;
+}
+
+.fa-youtube {
+    color: #bb0000;
+}
+
+.fa-google-plus-g {
+    color: #dd4b39;
+}
+
+.fa-google-plus-g:hover, .fa-youtube:hover, .fa-twitter:hover, .fa-instagram:hover, .fa-facebook:hover {
+    color: #8b8b8b;
+}
+
+footer {
+    background-color: #222;
+    padding: 25px;
+    border-top: 4px solid silver;
+    color: white;
+}
+
+caption {
+    caption-side: top;
+}
+
+.jumbotron {
+    padding: 1rem 2rem;
+}
+
+.padb ~ p {
+    margin-bottom: unset;
+}
+
+pre {
+    background-color: #212529;
+    border-radius: 15px;
+    color: whitesmoke;
+}
+
+::-webkit-scrollbar-track-piece {
+    /* opacity: 0; */
+    box-shadow: inset 0 0 0 rgba(255, 255, 255, 0);
+}
+
+
+pre::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+pre::-webkit-scrollbar-track {
+    opacity: 0;
+    border-radius: 10px;
+    margin: 8px;
+}
+
+pre::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgb(255, 255, 255);
+}
+
+pre::-webkit-scrollbar-corner {
+    display: none;
+}
+
+
+pre {
+    height: 433px;
+    overflow-y: scroll;
+}
+
+#top {
+    display: none;
+    right: 0;
+    bottom: 0;
+    float: right;
+    position: fixed;
+    z-index: 2;
+}
+
+.hreffix::before {
+    display: block;
+    content: " ";
+    margin-top: -70px;
+    height: 70px;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+td code {
+    color: #006cd7;
+}
+
+.il-block{
+    display: inline-block;
+}
+
+@media (max-width: 700px) {
+    .img-fluid {
+        max-width: 160%;
+        overflow: hidden;
+    }
+
+    .carousel-caption {
+        bottom: 36px;
+    }
+
+    .btn-lg {
+        padding: 0.5rem 0.5rem;
+        line-height: 1;
+    }
+
+    h1 {
+        font-size: 7vw;
+    }
+
+    h3 {
+        font-size: 5vw;
+    }
+    
+    .display-4 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 1440px){
+    .boxer {
+        width: 68%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .margin-off div {
+        margin-left: unset !important;
+        margin-right: unset !important;
+    }
+
+    .padding-off{
+        padding-left: unset !important;
+        padding-right: unset !important;
+    }
+
+    .boxer {
+        width: 100%;
+    }
+
+    .table-responsive {
+        max-width: unset;
+        width: unset;
+        margin: 0 15px;
+        padding: unset
+    }
+
+    .row {
+        margin-right: unset;
+        margin-left: unset;
+    }
+
+    .alert {
+        padding: .75rem 0;
+    }
+
+    form {
+        width: 90%;
+    }
+}
+
+@media(max-width: 370px) {
+    .navbar-brand img {
+        width: 205px;
+    }
+
+    div.carousel-item button{
+        font-size: 17px;
+    }
+
+    div.font-sz button{
+        font-size: 17px;
+    }
+    .pad-rl{
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+}

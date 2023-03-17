@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Пример 2</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Создайте четыре одинаковых столбца, которые плавают рядом друг с другом */
+        .column {
+            float: left;
+            width: 25%;
+            padding: 20px;
+        }
+
+        /* Очистить поплавки после колонн */
+        .row:after {
+            content: "";
+            display: table;
+        }
+
+        /* На экранах шириной 992px или меньше перейдите от четырех столбцов к двум столбцам */
+        @media screen and (max-width: 992px) {
+            .column {
+                width: 50%;
+            }
+        }
+
+        /* На экранах, которые имеют ширину 600 пикселей или меньше, сделайте стек столбцов поверх друг друга, а не рядом друг с другом */
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+<h1>Сомнение рефлектирует</h1>
+<p><strong>естественный закон исключённого третьего.</strong>
+    Аксиома силлогизма, по определению, представляет собой неоднозначный предмет деятельности. Дедуктивный метод
+    решительно представляет собой бабувизм. undefined. Согласно мнению известных философов, дедуктивный метод
+    естественно порождает и обеспечивает мир, tertium nоn datur. </p>
+<div class="row">
+    <div class="column" style="background-color:rgb(255, 170, 170);">
+        <h2>Колонка 1</h2>
+    </div>
+    <div class="column" style="background-color:rgb(155, 255, 124);">
+        <h2>Колонка 2</h2>
+    </div>
+    <div class="column" style="background-color:rgb(230, 255, 91);">
+        <h2>Колонка 3</h2>
+    </div>
+    <div class="column" style="background-color:rgb(126, 139, 255);">
+        <h2>Колонка 4</h2>
+    </div>
+</div>
+</body>
+</html>

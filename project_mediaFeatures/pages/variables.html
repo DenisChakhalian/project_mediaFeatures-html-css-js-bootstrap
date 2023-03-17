@@ -1,0 +1,663 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Переменные</title>
+    <link rel="icon" href="../img/icon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<!--Скролл-->
+<div id="top" class="mr-3 mb-3">
+    <a href="#">
+        <img src="../img/up.png" alt="Вверх">
+    </a>
+</div>
+<!--Навигация-->
+<nav class="navbar navbar-expand-xl navbar-dark bg-dark sticky-top position-fixed">
+    <div class="container-fluid">
+        <a href="../index.html" class="navbar-brand"><img src="../img/logo.png" alt="logo"></a>
+        <button class=" navbar-toggler" type="button" data-toggle="collapse" data-target="#ResponsiveNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="ResponsiveNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a href="syntax.html" class="nav-link">Синтаксис</a>
+                </li>
+                <li class="nav-item">
+                    <a href="logical_operators.html" class="nav-link">Логические операторы</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">Переменные</a>
+                </li>
+                <li class="nav-item">
+                    <a href="examples.html" class="nav-link">Примеры</a>
+                </li>
+                <li class="nav-item">
+                    <a href="feedback.html" class="nav-link">Обратная связь</a>
+                </li>
+                <li class="nav-item">
+                    <a href="keywords.html" class="nav-link">Ключевые слова</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--Блок-->
+<div class="boxer mt-5 margin-off">
+    <div class="row alert">
+        <div class="col-12 text-center mt-4">
+            <h1 class="display-4">Переменные</h1>
+        </div>
+    </div>
+    <hr>
+    <div class="mr-5 ml-5 mb-5 mt-4">
+        <div class="row alert">
+            <div class="col-12 text-justify">
+                <h4 class="padb font-italic hreffix" id="width">width</h4>
+                <p class="lead">Значение:
+                    &lt;длина&gt;.
+                </p>
+                <p class="lead">Относится к: визуальным и тактильным типам носителей.</p>
+                <p class="lead">Принимает <code>min</code>/<code>max</code> префиксы: да.</p>
+            </div>
+        </div>
+        <div class="col-12 text-justify">
+            <p class="lead">Медиа-функция «<code>width</code>» описывает ширину целевой области отображения устройства
+                вывода. Для
+                непрерывного носителя это ширина области просмотра, включая
+                размер визуализированной полосы прокрутки (если есть). Для постраничных носителей это ширина поля
+                страницы. Указанная
+                &lt;длина&gt; не может быть отрицательной.
+            </p>
+        </div>
+        <div>
+            <button type="button" class="btn btn-success text-left ml-3" data-toggle="collapse" data-target="#example1">
+                Пример
+            </button>
+            <div id="example1" class="collapse pl-3 pr-3 hreffix">
+                <div class="mt-4">
+                    <h5>Пример 1</h5>
+                    <h6 class="font-italic">Например, этот медиа-запрос выражает, что таблица стилей пригодна для печати
+                        на выходе шире, чем 25см:</h6>
+                    <kbd>&lt;link rel="stylesheet" media="print and (min-width: 25cm)" href="http://…" /&gt;</kbd>
+                </div>
+
+                <div class="mt-4">
+                    <h5>Пример 2</h5>
+                    <h6 class="font-italic">Этот медиа-запрос выражает, что таблица стилей может использоваться на
+                        устройствах с
+                        областью просмотра (часть экрана/бумаги, на которой отображается документ) шириной от 400 до 700
+                        пикселей:</h6>
+                    <kbd>@media screen and (min-width: 400px) and (max-width: 700px) { … }</kbd>
+                </div>
+
+                <div class="mt-4">
+                    <h5>Пример 3</h5>
+                    <h6 class="font-italic">Этот медиа-запрос выражает, что таблица стилей может использоваться на
+                        экране и
+                        портативных устройствах, если ширина области просмотра превышает 20em.</h6>
+                    <kbd>@media handheld and (min-width: 20em),
+                        screen and (min-width: 20em) { … }</kbd>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="mr-5 ml-5 mb-5 mt-4">
+        <div class="row alert">
+            <div class="col-12 text-justify">
+                <h4 class="padb font-italic hreffix" id="height">height</h4>
+                <p class="lead">Значение:
+                    &lt;длина&gt;.
+                </p>
+                <p class="lead">Относится к: визуальным и тактильным типам носителей.</p>
+                <p class="lead">Принимает <code>min</code>/<code>max</code> префиксы: да.</p>
+            </div>
+        </div>
+        <div class="col-12 text-justify">
+            <p class="lead">Медиа-функция «<code>height</code>» описывает высоту целевой области отображения устройства
+                вывода. Для непрерывных носителей это высота окна просмотра, включая размер отображаемой полосы
+                прокрутки
+                (если есть). Для выгружаемых носителей это высота окна страницы. Указанная
+                &lt;длина&gt; не может быть отрицательной.
+            </p>
+        </div>
+        <div>
+            <button type="button" class="btn btn-success text-left ml-3" data-toggle="collapse" data-target="#example2">
+                Пример
+            </button>
+            <div id="example2" class="collapse pl-3 pr-3 hreffix">
+                <div class="mt-4">
+                    <h5>Пример 1</h5>
+                    <h6 class="font-italic">Например, этот медиа-запрос выражает, что таблица стилей пригодна для печати
+                        на
+                        выходе шире, чем 50 пикселей:</h6>
+                    <kbd>&lt;link rel="stylesheet" media="print and (min-height: 50px)" href="http://…" /&gt;</kbd>
+                </div>
+                <div class="mt-4">
+                    <h5>Пример 2</h5>
+                    <h6 class="font-italic">Этот медиа-запрос выражает, что таблица стилей может использоваться на
+                        устройствах с
+                        областью просмотра (часть экрана/бумаги, на которой отображается документ) шириной от 200 до 450
+                        пикселей:</h6>
+                    <kbd>@media screen and (min-height: 200px) and (max-height: 450px) { … }</kbd>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="mr-5 ml-5 mb-5 mt-4">
+        <div class="row alert">
+            <div class="col-12 text-justify">
+                <h4 class="padb font-italic hreffix" id="device-width">device-width</h4>
+                <p class="lead">Значение:
+                    &lt;длина&gt;.
+                </p>
+                <p class="lead">Относится к: визуальным и тактильным типам носителей.</p>
+                <p class="lead">Принимает <code>min</code>/<code>max</code> префиксы: да.</p>
+            </div>
+        </div>
+        <div class="col-12 text-justify">
+            <p class="lead">Медиа-функция «<code>device-width</code>» описывает ширину поверхности рендеринга
+                устройства
+                вывода. Для
+                непрерывных носителей это ширина экрана. Для страничных носителей это ширина размера листа
+                страницы.
+                Указанная
+                &lt;длина&gt; не может быть отрицательной.
+            </p>
+        </div>
+        <div>
+            <button type="button" class="btn btn-success text-left ml-3" data-toggle="collapse" data-target="#example3">
+                Пример
+            </button>
+            <div id="example3" class="collapse pl-3 pr-3 hreffix">
+                <div class="mt-4">
+                    <h5>Пример 1</h5>
+                    <h6 class="font-italic">Таблица стилей будет применяться только к экранам, на которых в
+                        настоящий
+                        момент
+                        отображается ровно 800 пикселей по горизонтали.</h6>
+                    <kbd>@media screen and (device-width: 800px) { … }</kbd>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <div class="mr-5 ml-5 mb-5 mt-4">
+        <div class="row alert">
+            <div class="col-12 text-justify">
+                <h4 class="padb font-italic hreffix" id="device-height">device-height</h4>
+                <p class="lead">Значение:
+                    &lt;длина&gt;.
+                </p>
+                <p class="lead">Относится к: визуальным и тактильным типам носителей.</p>
+                <p class="lead">Принимает <code>min</code>/<code>max</code> префиксы: да.</p>
+            </div>
+        </div>
+        <div class="col-12 text-justify">
+            <p class="lead">Медиа-функция «<code>device-height</code>» описывает высоту рендеринга поверхности
+                устройства
+                вывода. Для непрерывного носителя это высота экрана. Для выгружаемых носителей это высота
+                размера
+                листа
+                страницы.
+                Указанная
+                &lt;длина&gt; не может быть отрицательной.
+            </p>
+        </div>
+        <div>
+            <button type="button" class="btn btn-success text-left ml-3" data-toggle="collapse" data-target="#example4">
+                Пример
+            </button>
+            <div id="example4" class="collapse pl-3 pr-3 hreffix">
+                <div class="mt-4">
+                    <h5>Пример 1</h5>
+                    <h6 class="font-italic">Таблица стилей будет применяться только к экранам, которые имеют
+                        ровно
+                        600
+                        пикселей по вертикали.</h6>
+                    <kbd>&lt;link rel="stylesheet" media="screen and (device-height: 600px)" /&gt;</kbd>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="mr-5 ml-5 mb-5 mt-4">
+        <div class="row alert">
+            <div class="col-12 text-justify">
+                <h4 class="padb font-italic hreffix" id="orientation">orientation</h4>
+                <p class="lead">Значение: <code>portrait</code> | <code>landscape</code>.</p>
+                <p class="lead">Относится к: типам растровых носителей.</p>
+                <p class="lead">Принимает <code>min</code>/<code>max</code> префиксы: нет.</p>
+            </div>
+        </div>
+        <div class="col-12 text-justify">
+            <p class="lead">Медиа-функция «<code>orientation</code>» принимает значение <code>portrait</code>,
+                если
+                значение медиа-функции <code>height</code> больше или равно значению медиа-функции
+                <code>width</code>. В
+                противном случае <code>orientation</code> принимает значение <code>landscape</code>.
+            </p>
+        </div>
+        <div>
+            <button type="button" class="btn btn-success text-left ml-3" data-toggle="collapse" data-target="#example5">
+                Пример
+            </button>
+            <div id="example5" class="collapse pl-3 pr-3 hreffix">
+                <div class="mt-4">
+                    <h5>Пример 1</h5>
+                    <kbd>@media all and (orientation:portrait) { … }</kbd>
+                </div>
+                <div class="mt-4">
+                    <h5>Пример 2</h5>
+                    <kbd>@media all and (orientation:landscape) { … }</kbd>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="mr-5 ml-5 mb-5 mt-4">
+        <div class="row alert">
+            <div class="col-12 text-justify">
+                <h4 class="padb font-italic hreffix" id="aspect-ratio">aspect-ratio</h4>
+                <p class="lead">Значение:
+                    &lt;соотношение&gt;.
+                </p>
+                <p class="lead">Относится к: типам растровых носителей.</p>
+                <p class="lead">Принимает <code>min</code>/<code>max</code> префиксы: да.</p>
+            </div>
+        </div>
+        <div class="col-12 text-justify">
+            <p class="lead">Медиа-функция «<code>aspect-ratio</code>» определяется как отношение значения
+                медиа-функции
+                «<code>width</code>» к значению медиа-функции «<code>height</code>».
+            </p>
+        </div>
+        <div>
+            <button type="button" class="btn btn-success text-left ml-3" data-toggle="collapse" data-target="#example6">
+                Пример
+            </button>
+            <div id="example6" class="collapse pl-3 pr-3 hreffix">
+                <div class="mt-4">
+                    <h5>Пример 1</h5>
+                    <kbd>@media (min-aspect-ratio: 8/5) { … }</kbd>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="mr-5 ml-5 mb-5 mt-4">
+        <div class="row alert">
+            <div class="col-12 text-justify">
+                <h4 class="padb font-italic hreffix" id="device-aspect-ratio">device-aspect-ratio</h4>
+                <p class="lead">Значение:
+                    &lt;соотношение&gt;.
+                </p>
+                <p class="lead">Относится к: типам растровых носителей.</p>
+                <p class="lead">Принимает <code>min</code>/<code>max</code> префиксы: да.</p>
+            </div>
+        </div>
+        <div class="col-12 text-justify">
+            <p class="lead">Медиа-функция «<code>device-aspect-ratio</code>» определяется как отношение значения
+                медиа-функции
+                «<code>device-width</code>» к значению медиа-функции «<code>device-height</code>».
+            </p>
+        </div>
+        <div>
+            <button type="button" class="btn btn-success text-left ml-3" data-toggle="collapse" data-target="#example7">
+                Пример
+            </button>
+            <div id="example7" class="collapse pl-3 pr-3 hreffix">
+                <div class="mt-4">
+                    <h5>Пример 1</h5>
+                    <h6 class="font-italic">Например, если экранное устройство с квадратными пикселями имеет
+                        1280
+                        пикселей
+                        по горизонтали и 720 пикселей по вертикали (обычно называемые «16: 9»), следующие
+                        медиа-запросы
+                        будут
+                        соответствовать такому устройству:</h6>
+                    <kbd>@media screen and (device-aspect-ratio: 16/9) { … }</kbd>
+                </div>
+                <div class="mt-4">
+                    <kbd>@media screen and (device-aspect-ratio: 32/18) { … }</kbd>
+                </div>
+                <div class="mt-4">
+                    <kbd>@media screen and (device-aspect-ratio: 1280/720) { … }</kbd>
+                </div>
+                <div class="mt-4">
+                    <kbd>@media screen and (device-aspect-ratio: 2560/1440) { … }</kbd>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="mr-5 ml-5 mb-5 mt-4">
+        <div class="row alert">
+            <div class="col-12 text-justify">
+                <h4 class="padb font-italic hreffix" id="color">color</h4>
+                <p class="lead">Значение:
+                    &lt;целое число&gt;.
+                </p>
+                <p class="lead">Относится к: типам визуальных носителей.</p>
+                <p class="lead">Принимает <code>min</code>/<code>max</code> префиксы: да.</p>
+            </div>
+        </div>
+        <div class="col-12 text-justify">
+            <p class="lead">Медиа-функция «<code>color</code>» описывает количество бит на компонент цвета
+                устройства вывода. Если устройство не является цветным устройством, значение равно нулю.
+            </p>
+        </div>
+        <div>
+            <button type="button" class="btn btn-success text-left ml-3" data-toggle="collapse" data-target="#example8">
+                Пример
+            </button>
+            <div id="example8" class="collapse pl-3 pr-3 hreffix">
+                <div class="mt-4">
+                    <h5>Пример 1</h5>
+                    <h6 class="font-italic">Например, эти два медиа-запроса выражают, что таблица стилей
+                        применяется
+                        ко
+                        всем
+                        цветным устройствам:</h6>
+                    <kbd>@media all and (color) { … }</kbd>
+                </div>
+                <kbd>@media all and (min-color: 1) { … }</kbd>
+                <div class="mt-4">
+                    <h5>Пример 2</h5>
+                    <h6 class="font-italic">Этот медиа-запрос выражает, что таблица стилей применяется к цветным
+                        устройствам
+                        с 2 или более битами на компонент цвета:</h6>
+                    <kbd>@media all and (min-color: 2) { … }</kbd>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="mr-5 ml-5 mb-5 mt-4">
+        <div class="row alert">
+            <div class="col-12 text-justify">
+                <h4 class="padb font-italic hreffix" id="color-index">color-index</h4>
+                <p class="lead">Значение:
+                    &lt;целое число&gt;.
+                </p>
+                <p class="lead">Относится к: типам визуальных носителей.</p>
+                <p class="lead">Принимает <code>min</code>/<code>max</code> префиксы: да.</p>
+            </div>
+        </div>
+        <div class="col-12 text-justify">
+            <p class="lead">Медиа-функция «<code>color-index</code>» описывает количество записей в таблице
+                соответствия
+                цветов устройства вывода. Если устройство не использует таблицу соответствия цветов, значение
+                равно
+                нулю. Указанное
+                &lt;целое число&gt; не может быть отрицательным.
+            </p>
+        </div>
+        <div>
+            <button type="button" class="btn btn-success text-left ml-3" data-toggle="collapse" data-target="#example9">
+                Пример
+            </button>
+            <div id="example9" class="collapse pl-3 pr-3 hreffix">
+                <div class="mt-4">
+                    <h5>Пример 1</h5>
+                    <h6 class="font-italic">Например, вот два способа выразить, что таблица стилей применяется
+                        ко
+                        всем
+                        устройствам с индексами цвета:</h6>
+                    <kbd>@media all and (color-index) { … }</kbd>
+                </div>
+                <kbd>@media all and (min-color-index: 1) { … }</kbd>
+                <div class="mt-4">
+                    <h5>Пример 2</h5>
+                    <h6 class="font-italic">Этот медиа-запрос выражает, что таблица стилей применяется к
+                        устройству
+                        индекса цвета с 256 или более записями:</h6>
+                    <kbd>&lt;?xml-stylesheet media="all and (min-color-index: 256)"
+                        href="http://www.example.com/…"?&gt;</kbd>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="mr-5 ml-5 mb-5 mt-4">
+        <div class="row alert">
+            <div class="col-12 text-justify">
+                <h4 class="padb font-italic hreffix" id="monochrome">monochrome</h4>
+                <p class="lead">Значение:
+                    &lt;целое число&gt;.
+                </p>
+                <p class="lead">Относится к: типам визуальных носителей.</p>
+                <p class="lead">Принимает <code>min</code>/<code>max</code> префиксы: да.</p>
+            </div>
+        </div>
+        <div class="col-12 text-justify">
+            <p class="lead">Медиа-функция «<code>monochrome</code>» описывает количество бит на пиксель в
+                монохромном
+                буфере кадров. Если устройство не является монохромным устройством, значение устройства вывода
+                будет
+                0.
+                Указанное &lt;целое число&gt; не может быть отрицательным.
+            </p>
+        </div>
+        <div>
+            <button type="button" class="btn btn-success text-left ml-3" data-toggle="collapse"
+                    data-target="#example10">
+                Пример
+            </button>
+            <div id="example10" class="collapse pl-3 pr-3 hreffix">
+                <div class="mt-4">
+                    <h5>Пример 1</h5>
+                    <h6 class="font-italic">Например, вот два способа выразить, что таблица стилей применяется
+                        ко
+                        всем
+                        монохромным устройствам:</h6>
+                    <kbd>@media all and (monochrome) { … }</kbd>
+                </div>
+                <kbd>@media all and (min-monochrome: 1) { … }</kbd>
+                <div class="mt-4">
+                    <h5>Пример 2</h5>
+                    <h6 class="font-italic">Таблица стилей применяется к монохромным устройствам с более чем 2
+                        битами на
+                        пиксель:</h6>
+                    <kbd>@media all and (min-monochrome: 2) { … }</kbd>
+                </div>
+                <div class="mt-4">
+                    <h5>Пример 3</h5>
+                    <h6 class="font-italic">Таблица стилей для цветных страниц и другая для монохромных:</h6>
+                    <kbd>&lt;link rel="stylesheet" media="print and (color)" href="http://…" /&gt;</kbd>
+                </div>
+                <div>
+                    <kbd>&lt;link rel="stylesheet" media="print and (monochrome)" href="http://…" /&gt;</kbd>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="mr-5 ml-5 mb-5 mt-4">
+        <div class="row alert">
+            <div class="col-12 text-justify">
+                <h4 class="padb font-italic hreffix" id="resolution">resolution</h4>
+                <p class="lead">Значение:
+                    &lt;разрешение&gt;.
+                </p>
+                <p class="lead">Относится к: типам растровых носителей.</p>
+                <p class="lead">Принимает <code>min</code>/<code>max</code> префиксы: да.</p>
+            </div>
+        </div>
+        <div class="col-12 text-justify">
+            <p class="lead">Медиа-функция «<code>resolution</code>» описывает разрешение устройства вывода, то
+                есть
+                плотность пикселей. При запросе устройств с неквадратными пикселями в запросах «минимальное
+                разрешение»
+                наименее плотное измерение должно сравниваться с указанным значением, а в запросах
+                «<code>max-resolution</code>» вместо этого следует сравнивать наиболее плотное измерение. Запрос
+                «<code>resolution</code>»
+                (без
+                префикса «<code>min-</code>» или «<code>max-</code>») никогда не сопоставляет устройство с
+                неквадратными
+                пикселями.
+            </p>
+        </div>
+        <div>
+            <button type="button" class="btn btn-success text-left ml-3" data-toggle="collapse"
+                    data-target="#example11">
+                Пример
+            </button>
+            <div id="example11" class="collapse pl-3 pr-3 hreffix">
+                <div class="mt-4">
+                    <h5>Пример 1</h5>
+                    <h6 class="font-italic">Например, этот медиа-запрос выражает, что таблица стилей может
+                        использоваться на
+                        устройствах с разрешением более 300 точек на дюйм:</h6>
+                    <kbd>@media print and (min-resolution: 300dpi) { … }</kbd>
+                </div>
+                <div class="mt-4">
+                    <h5>Пример 2</h5>
+                    <h6 class="font-italic">Этот медиа-запрос выражает, что таблица стилей может использоваться
+                        на
+                        устройствах с разрешением более 118 точек на сантиметр:</h6>
+                    <kbd>@media print and (min-resolution: 118dpcm) { … }</kbd>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="mr-5 ml-5 mb-5 mt-4">
+        <div class="row alert">
+            <div class="col-12 text-justify">
+                <h4 class="padb font-italic hreffix" id="scan">scan</h4>
+                <p class="lead">Значение: <code>progressive</code> | <code>interlace</code>.
+                </p>
+                <p class="lead">Относится к: типам "tv" медиа.</p>
+                <p class="lead">Принимает <code>min</code>/<code>max</code> префиксы: нет.</p>
+            </div>
+        </div>
+        <div class="col-12 text-justify">
+            <p class="lead">Медиа-функция «<code>scan</code>» описывает процесс сканирования выходных
+                телевизионных устройств.
+            </p>
+        </div>
+        <div>
+            <button type="button" class="btn btn-success text-left ml-3" data-toggle="collapse"
+                    data-target="#example12">
+                Пример
+            </button>
+            <div id="example12" class="collapse pl-3 pr-3 hreffix">
+                <div class="mt-4">
+                    <h5>Пример 1</h5>
+                    <h6 class="font-italic">Например, этот медиа-запрос выражает, что таблица стилей может
+                        использоваться на
+                        телевизионных устройствах с прогрессивной разверткой:</h6>
+                    <kbd>@media tv and (scan: progressive) { … }</kbd>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="mr-5 ml-5 pb-5 mt-4">
+        <div class="row alert">
+            <div class="col-12 text-justify">
+                <h4 class="padb font-italic hreffix" id="grid">grid</h4>
+                <p class="lead">Значение:
+                    &lt;целое число&gt;.
+                </p>
+                <p class="lead">Относится к: типам визуальных и тактильных носители.</p>
+                <p class="lead">Принимает <code>min</code>/<code>max</code> префиксы: нет.</p>
+            </div>
+        </div>
+        <div class="col-12 text-justify">
+            <p class="lead">Медиа-функция «<code>grid</code>» используется для запроса, является ли устройство
+                вывода сеткой или растровым изображением.
+                Если устройство вывода основано на сетке (например, терминал "tty" или дисплей телефона только с
+                одним
+                фиксированным шрифтом), значение будет равно 1. В противном случае значение будет равно 0.
+            </p>
+        </div>
+        <div>
+            <button type="button" class="btn btn-success text-left ml-3" data-toggle="collapse"
+                    data-target="#example13">
+                Пример
+            </button>
+            <div id="example13" class="collapse pl-3 pr-3 hreffix">
+                <div class="mt-4">
+                    <h5>Пример 1</h5>
+                    <kbd>@media handheld and (grid) and (max-width: 15em) { … }</kbd>
+                </div>
+                <div class="mt-4">
+                    <h5>Пример 2</h5>
+                    <kbd>@media handheld and (grid) and (device-max-height: 7em) { … }</kbd>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!--Кнопки-->
+    <div class="container-fluid pad-rl">
+        <div class="ml-auto d-flex justify-content-between pb-4 font-sz">
+            <a href="logical_operators.html">
+                <button class="btn btn-dark btn-lg" type="button">Логические операторы</button>
+            </a>
+            <a href="examples.html">
+                <button class="btn btn-dark btn-lg" type="button">Примеры</button>
+            </a>
+        </div>
+    </div>
+</div>
+<!--Футер-->
+<footer>
+    <div class="row padding text-center">
+        <div class="col-12">
+            <h2>Контакты</h2>
+        </div>
+        <div class="col-12 social padding">
+            <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://myaccount.google.com/" target="_blank"><i class="fab fa-google-plus-g"></i></a>
+        </div>
+        <hr>
+        <div class="col-12">
+            <h6>2020 Денис Чахальян, по всем вопросам пишите по адресу
+                denys.chakhalian@nure.ua</h6>
+        </div>
+    </div>
+</footer>
+
+<script>
+    let btnTop = document.getElementById("top");
+
+    window.onscroll = function () {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            btnTop.style.display = "block";
+        } else {
+            btnTop.style.display = "none";
+        }
+    }
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+</body>
+</html>

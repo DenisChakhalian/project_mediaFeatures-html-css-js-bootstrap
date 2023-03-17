@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Обратная связь</title>
+    <link rel="icon" href="../img/icon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<!--Скролл-->
+<div id="top" class="mr-3 mb-3">
+    <a href="#">
+        <img src="../img/up.png" alt="Вверх">
+    </a>
+</div>
+<!--Навигация-->
+<nav class="navbar navbar-expand-xl navbar-dark bg-dark sticky-top position-fixed">
+    <div class="container-fluid">
+        <a href="../index.html" class="navbar-brand"><img src="../img/logo.png" alt="logo"></a>
+        <button class=" navbar-toggler" type="button" data-toggle="collapse" data-target="#ResponsiveNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="ResponsiveNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a href="syntax.html" class="nav-link">Синтаксис</a>
+                </li>
+                <li class="nav-item">
+                    <a href="logical_operators.html" class="nav-link">Логические операторы</a>
+                </li>
+                <li class="nav-item">
+                    <a href="variables.html" class="nav-link">Переменные</a>
+                </li>
+                <li class="nav-item">
+                    <a href="examples.html" class="nav-link">Примеры</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">Обратная связь</a>
+                </li>
+                <li class="nav-item">
+                    <a href="keywords.html" class="nav-link">Ключевые слова</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--Блок-->
+<div class="boxer mt-5 pb-4">
+    <!--Первый блок-->
+    <div class="row alert">
+        <div class="col-12 text-center mt-4">
+            <h1 class="display-4">Написать нам</h1>
+        </div>
+    </div>
+    <hr>
+  
+
+    <!--Второй блок-->
+    <form class="pr-4 pl-4 pt-4 pb-4 mt-4">
+
+        <div class="form-group">
+            <label class="text-left" for="name">Введите ваше имя:</label>
+            <input type="text" class="form-control" id="name" placeholder="Имя" >
+
+        </div>
+        <div class="form-group">
+            <label class="text-left" for="email">Введите email: </label>
+            <input type="text" class="form-control" id="email" placeholder="Email" >
+
+        </div>
+        <div class="form-group">
+            <label class="text-left" for="question">Введите ваш вопрос: </label>
+            <textarea class="form-control" id="question" rows="7" placeholder="Вопрос" ></textarea>
+
+        </div>
+        <div class="row justify-content-center">
+            <button type="button" id="send" onclick="sendMail()" class=" btn btn-primary col-sm-5">Отправить</button>
+        </div>
+    </form>
+</div>
+<!--Футер-->
+<footer class="container-fluid">
+    <div class="container-fluid">
+        <div class="row padding text-center">
+            <div class="col-12">
+                <h2>Контакты</h2>
+            </div>
+            <div class="col-12 social padding">
+                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://myaccount.google.com/" target="_blank"><i class="fab fa-google-plus-g"></i></a>
+            </div>
+            <hr>
+            <div class="col-12">
+                <h6>2020 Денис Чахальян, по всем вопросам пишите по адресу
+                    denys.chakhalian@nure.ua</h6>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+/* send email*/
+
+function sendMail() {
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value;
+    const question = document.getElementById('question').value.trim();
+
+    const errors = [];
+
+    if (!name.length) {
+        errors.push("имя");
+    }
+
+    if (!validateEmail(email)) {
+        errors.push("email");
+    }
+
+    if (!question.length) {
+        errors.push("вопрос");
+    }
+
+    if (errors.length) {
+      alert("Неверно введено: " + errors.join(', ') + "." );
+    } else {
+        window.location.href = "mailto:denys.chakhalian@nure.ua?subject=Media Features&body=" + question + ".%0A%0AИмя: " + name + ".%0AEmail: " + email + ".";
+        document.getElementById('name').value='';
+        document.getElementById('email').value='';
+        document.getElementById('question').value='';
+    }
+  
+}
+
+function validateEmail(email) 
+    {
+        const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(email);  // true or false
+    }
+    
+
+const btnTop = document.getElementById("top");
+
+window.onscroll = function () {
+    scrollFunction()
+};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        btnTop.style.display = "block";
+    } else {
+        btnTop.style.display = "none";
+    }
+}
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+</body>
+</html>

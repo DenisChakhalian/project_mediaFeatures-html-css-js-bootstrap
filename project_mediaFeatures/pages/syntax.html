@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Синтаксис</title>
+    <link rel="icon" href="../img/icon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<!--Скролл-->
+<div id="top" class="mr-3 mb-3">
+    <a href="#">
+        <img src="../img/up.png" alt="Вверх">
+    </a>
+</div>
+<!--Навигация-->
+<nav class="navbar navbar-expand-xl navbar-dark bg-dark sticky-top position-fixed">
+    <div class="container-fluid">
+        <a href="../index.html" class="navbar-brand"><img src="../img/logo.png" alt="logo"></a>
+        <button class=" navbar-toggler" type="button" data-toggle="collapse" data-target="#ResponsiveNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="ResponsiveNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">Главная</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="#" class="nav-link">Синтаксис</a>
+                </li>
+                <li class="nav-item">
+                    <a href="logical_operators.html" class="nav-link">Логические операторы</a>
+                </li>
+                <li class="nav-item">
+                    <a href="variables.html" class="nav-link">Переменные</a>
+                </li>
+                <li class="nav-item">
+                    <a href="examples.html" class="nav-link">Примеры</a>
+                </li>
+                <li class="nav-item">
+                    <a href="feedback.html" class="nav-link">Обратная связь</a>
+                </li>
+                <li class="nav-item">
+                    <a href="keywords.html" class="nav-link">Ключевые слова</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--Общий блок-->
+<div class="boxer mt-5">
+    <!--Первый блок-->
+    <div class="row alert">
+        <div class="col-12 text-center mt-4">
+            <h1 class="display-4">Синтаксис</h1>
+        </div>
+
+    </div>
+    <hr>
+    <!--Второй блок-->
+    <div class="col-12 text-justify mt-4">
+        <p class="lead">
+            Синтаксически медиа-запросы напоминают свойства CSS: они имеют имена и принимают определенные
+            значения.
+            Однако есть несколько важных различий между свойствами и функциями мультимедиа:
+        </p>
+        <ul>
+            <li>Свойства используются в
+                <em>объявлениях</em> для предоставления информации о том, как представить документ.
+                Медиа-запросы
+                используются в
+                <em>выражениях</em> для описания требований устройства вывода.
+            </li>
+            <li>Большинство медиа-запросов принимают необязательные префиксы «<code>min</code>» или
+                «<code>max</code>» для выражения ограничений «больше
+                или равно» и «меньше или равно». Данный синтаксис используется для исключения символов «<» и «>»,
+                которые могут быть не совместимы с HTML и XML. Те медиа-запросы, которые принимают префиксы, чаще
+                всего
+                будут использоваться с префиксами, но также могут использоваться отдельно.
+            </li>
+            <li>
+                Свойства всегда требуют значения для формирования объявления.
+                Медиа-запросы, с другой стороны, также могут использоваться без значения. Для медиа-запросов
+                функция
+                <code>(feature)</code> будет иметь значение <code>true</code>, если <code>(feature: x)</code>
+                будет
+                иметь значение <code>true</code> для значения <code>x</code>, отличного от нуля или ноль, за
+                которым
+                следует идентификатор устройства (т. е., кроме <code>0, 0px,
+                0em</code> и т. д.). Медиа-запросы с префиксом <code>min</code> / <code>max</code> нельзя
+                использовать без значения. Когда медиа-запрос с префиксом <code>min</code> / <code>max</code>
+                используется без значения, это делает медиа-запрос искаженным.
+            </li>
+            <li>
+                Свойства могут принимать более сложные значения, например, вычисления, которые включают
+                несколько
+                других значений. Медиа-запросы допускают только одно значение: одно ключевое слово, один номер
+                или
+                номер с идентификатором устройства. (Единственными исключениями являются мультимедийные функции
+                «<code>aspect-ratio</code>» и «<code>device-aspect-ratio</code>».)
+            </li>
+        </ul>
+        <p class="lead">
+            Все запросы начинаются с правила <code>@media</code>, после чего следует условие, в котором
+            используются типы
+            носителей, логические операторы и медиа-функции.</p>
+    </div>
+    <!--Таблица описания-->
+    <div class="pr-4 pl-4 padding-off">
+        <table class="table table-bordered table-responsive">
+            <caption class="text-left font-italic">Типы носителей</caption>
+            <thead class="text-center table-dark">
+            <tr>
+                <th>Тип</th>
+                <th>Описание</th>
+            </tr>
+            </thead>
+            <tbody class="text-left">
+            <tr>
+                <td><code id="all" class="hreffix">all</code></td>
+                <td>Все типы. Это значение используется по умолчанию.</td>
+            </tr>
+            <tr>
+                <td><code id="braille" class="hreffix">braille</code></td>
+                <td>Устройства, основанные на системе Брайля, которые предназначены для чтения слепыми людьми.</td>
+            </tr>
+            <tr>
+                <td><code id="embossed" class="hreffix">embossed</code></td>
+                <td>Принтеры, использующие для печати систему Брайля.</td>
+            </tr>
+            <tr>
+                <td><code id="handheld" class="hreffix">handheld</code></td>
+                <td>Смартфоны и аналогичные им аппараты.</td>
+            </tr>
+            <tr>
+                <td><code id="print" class="hreffix">print</code></td>
+                <td>Принтеры и другие печатающие устройства.</td>
+            </tr>
+            <tr>
+                <td><code id="projection" class="hreffix">projection</code></td>
+                <td>Проекторы.</td>
+            </tr>
+            <tr>
+                <td><code id="screen" class="hreffix">screen</code></td>
+                <td>Экран монитора.</td>
+            </tr>
+            <tr>
+                <td><code id="speech" class="hreffix">speech</code></td>
+                <td>Речевые синтезаторы, а также программы для воспроизведения текста вслух. Сюда, например, можно
+                    отнести
+                    речевые браузеры.
+                </td>
+            </tr>
+            <tr>
+                <td><code id="tty" class="hreffix">tty</code></td>
+                <td>Устройства с фиксированным размером символов (телетайпы, терминалы, устройства с ограничениями
+                    дисплея).
+                </td>
+            </tr>
+            <tr>
+                <td><code id="tv" class="hreffix">tv</code></td>
+                <td>Телевизоры.</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <!--Третий блок-->
+    <div class="row alert">
+        <div class="col-12">
+            <p class="lead text-justify">Медиа запросы позволяют адаптировать страницу для различных типов
+                устройств,
+                таких как: принтеры, речевых браузеров, устройств Брайля, телевизоров и так далее. Например это
+                правило
+                для принтеров:</p>
+            <p class="lead"><kbd>@media print { ... }</kbd></p>
+            <p class="lead text-justify">Вы также можете писать правила сразу для нескольких устройств. Например
+                этот
+                <code>@media</code> написан сразу для экранов и принтеров: </p>
+            <p class="lead"><kbd>@media screen, print { ... }</kbd></p>
+            <p class="lead text-justify">
+                Список устройств вы можете найти в таблице <a href="#all">выше</a>. Но для задания более
+                детальных и
+                узконаправленных правил вам нужно просмотреть раздел <a href="examples.html">"Примеры".</a></p>
+        </div>
+    </div>
+    <hr>
+    <!--Кнопки-->
+    <div class="ml-auto d-flex justify-content-between pb-4 pr-3 pl-3 font-sz">
+        <a href="../index.html">
+            <button class="btn btn-dark btn-lg" type="button">Главная</button>
+        </a>
+        <a href="logical_operators.html">
+            <button class="btn btn-dark btn-lg" type="button">Логические операторы</button>
+        </a>
+    </div>
+</div>
+<!--Футер-->
+<footer class="container-fluid">
+    <div class="container-fluid">
+        <div class="row padding text-center">
+            <div class="col-12">
+                <h2>Контакты</h2>
+            </div>
+            <div class="col-12 social padding">
+                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://myaccount.google.com/" target="_blank"><i class="fab fa-google-plus-g"></i></a>
+            </div>
+            <hr>
+            <div class="col-12">
+                <h6>2020 Денис Чахальян, по всем вопросам пишите по адресу
+                    denys.chakhalian@nure.ua</h6>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    let btnTop = document.getElementById("top");
+
+    window.onscroll = function () {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            btnTop.style.display = "block";
+        } else {
+            btnTop.style.display = "none";
+        }
+    }
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+</body>
+</html>

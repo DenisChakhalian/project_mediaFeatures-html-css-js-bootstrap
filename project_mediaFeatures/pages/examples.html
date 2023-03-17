@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Примеры</title>
+    <link rel="icon" href="../img/icon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<!--Скролл-->
+<div id="top" class="mr-3 mb-3">
+    <a href="#">
+        <img src="../img/up.png" alt="Вверх">
+    </a>
+</div>
+<!--Навигация-->
+<nav class="navbar navbar-expand-xl navbar-dark bg-dark sticky-top position-fixed">
+    <div class="container-fluid">
+        <a href="../index.html" class="navbar-brand"><img src="../img/logo.png" alt="logo"></a>
+        <button class=" navbar-toggler" type="button" data-toggle="collapse" data-target="#ResponsiveNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="ResponsiveNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a href="syntax.html" class="nav-link">Синтаксис</a>
+                </li>
+                <li class="nav-item">
+                    <a href="logical_operators.html" class="nav-link">Логические операторы</a>
+                </li>
+                <li class="nav-item">
+                    <a href="variables.html" class="nav-link">Переменные</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">Примеры</a>
+                </li>
+                <li class="nav-item">
+                    <a href="feedback.html" class="nav-link">Обратная связь</a>
+                </li>
+                <li class="nav-item">
+                    <a href="keywords.html" class="nav-link">Ключевые слова</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--Блок-->
+<div class="boxer mt-5 margin-off">
+    <!--Первый блок-->
+    <div class="row alert">
+        <div class="col-12 text-center mt-4">
+            <h1 class="display-4">Примеры</h1>
+        </div>
+    </div>
+    <hr>
+    <div class="mr-5 ml-5 mt-4">
+        <div class="row alert">
+            <div class="col-12 text-justify">
+                <h4 class="padb font-italic hreffix" id="flex_nav_ex">Пример 1. Медиа-запросы для меню</h4>
+                <p class="lead">В этом примере мы используем медиа-запросы для создания адаптивного меню навигации,
+                    которое меняется в дизайне на различных размерах экрана:</p>
+            </div>
+        </div>
+        <div class="col-12 mb-5">
+            <div class="border-code">
+            <pre>
+            <code>
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang=&quot;ru&quot;&gt;
+        &lt;head&gt;
+            &lt;meta charset=&quot;utf-8&quot;&gt;
+            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+            &lt;title&gt;Пример 1&lt;/title&gt;
+            &lt;style&gt;
+                * {
+                    box-sizing: border-box;
+                }
+        
+                /* Стиль верхней панели навигации */
+                .topnav {
+                    overflow: hidden;
+                    background-color: #333;
+                }
+        
+                /* Стиль верхних навигационных ссылок */
+                .topnav a {
+                    float: left;
+                    display: block;
+                    color: #f2f2f2;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                }
+        
+                /* Изменение цвета при наведении */
+                .topnav a:hover {
+                    background-color: #ddd;
+                    color: black;
+                }
+        
+                /* На экранах, которые 600px шириной или меньше, сделать ссылки меню стек поверх друг друга, а не рядом друг с другом */
+                @media screen and (max-width: 600px) {
+                    .topnav a {
+                        float: none;
+                        width: 100%;
+                    }
+                }
+            &lt;/style&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;div class=&quot;topnav&quot;&gt;
+                &lt;a href=&quot;#&quot;&gt;Главная&lt;/a&gt;
+                &lt;a href=&quot;#&quot;&gt;Не главная&lt;/a&gt;
+                &lt;a href=&quot;#&quot;&gt;Третья&lt;/a&gt;
+            &lt;/div&gt;
+            &lt;h1&gt;С другой стороны начало повседневной работы&lt;/h1&gt;
+            &lt;p&gt;по формированию позиции обеспечивает широкому кругу специалистов участие в формировании дальнейших направлений развития проекта.
+            Практический опыт показывает, что постоянный количественный рост и сфера нашей активности способствует повышению актуальности форм
+            воздействия? Не следует, однако, забывать о том, что реализация намеченного плана развития позволяет оценить значение всесторонне
+            сбалансированных нововведений. Задача организации, в особенности же повышение уровня гражданского сознания влечет за собой процесс
+            внедрения и модернизации дальнейших направлений развитая системы массового участия. Практический опыт показывает, что реализация
+            намеченного плана развития представляет собой интересный эксперимент проверки системы масштабного изменения ряда параметров.&lt;/p&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;</code>
+            </pre>
+            </div>
+            <a href="#nul" onclick="window.open('examples/example_1.html ','','Width=550,Height=400');">
+                <button type="button" class="btn btn-success text-left ml-3">
+                    Открыть
+                </button>
+            </a>
+        </div>
+    </div>
+    <hr>
+    <div class="mr-5 ml-5 mt-4">
+        <div class="row alert">
+            <div class="col-12 text-justify">
+                <h4 class="padb font-italic hreffix" id="flex_columns_ex">Пример 2. Медиа-запросы для столбцов</h4>
+                <p class="lead">В этом примере мы создаем макет, который варьируется от четырех, в два столбца и столбцы
+                    полной ширины, в зависимости от различных размеров экрана:</p>
+            </div>
+        </div>
+        <div class="col-12 mb-5">
+            <div class="border-code">
+            <pre>
+            <code>
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+        &lt;head&gt;
+            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+            &lt;title&gt;Пример 2&lt;/title&gt;
+            &lt;style&gt;
+            * {
+                box-sizing: border-box;
+            }
+        
+            /* Создайте четыре одинаковых столбца, которые плавают рядом друг с другом */
+            .column {
+                float: left;
+                width: 25%;
+                padding: 20px;
+            }
+        
+            /* Очистить поплавки после колонн */
+            .row:after {
+                content: &quot;&quot;;
+                display: table;
+            }
+        
+            /* На экранах шириной 992px или меньше перейдите от четырех столбцов к двум столбцам */
+            @media screen and (max-width: 992px) {
+                .column {
+                width: 50%;
+                }
+            }
+        
+            /* На экранах, которые имеют ширину 600 пикселей или меньше, сделайте стек столбцов поверх друг друга, а не рядом друг с другом */
+            @media screen and (max-width: 600px) {
+                .column {
+                width: 100%;
+                }
+            }
+            &lt;/style&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1&gt;Сомнение рефлектирует&lt;/h1&gt;
+            &lt;p&gt;&lt;strong&gt;естественный закон исключённого третьего.&lt;/strong&gt; 
+            Аксиома силлогизма, по определению, представляет собой неоднозначный предмет деятельности. Дедуктивный метод решительно представляет
+            собой бабувизм. undefined. Согласно мнению известных философов, дедуктивный метод естественно порождает и обеспечивает мир, tertium
+            nоn datur. &lt;/p&gt;
+            &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;column&quot; style=&quot;background-color:rgb(255, 170, 170);&quot;&gt;
+                &lt;h2&gt;Колонка 1&lt;/h2&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;column&quot; style=&quot;background-color:rgb(155, 255, 124);&quot;&gt;
+                &lt;h2&gt;Колонка 2&lt;/h2&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;column&quot; style=&quot;background-color:rgb(230, 255, 91);&quot;&gt;
+                &lt;h2&gt;Колонка 3&lt;/h2&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;column&quot; style=&quot;background-color:rgb(126, 139, 255);&quot;&gt;
+                &lt;h2&gt;Колонка 4&lt;/h2&gt;
+            &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;</code>
+            </pre>
+            </div>
+            <a href="#nul" onclick="window.open('examples/example_2.html ','','Width=550,Height=400');">
+                <button type="button" class="btn btn-success text-left ml-3">
+                    Открыть
+                </button>
+            </a>
+        </div>
+    </div>
+    <hr>
+    <div class="mr-5 ml-5 mt-4">
+        <div class="row alert">
+            <div class="col-12 text-justify">
+                <h4 class="padb font-italic hreffix" id="print_ex">Пример 3. Браузер и печать</h4>
+                <p class="lead">В данном примере вводится два стиля — один для изменения вида элементов при их обычном
+                    отображении в браузере, а второй — при
+                    выводе страницы на печать. При этом облик документа для разных носителей может сильно различаться
+                    между собой:</p>
+            </div>
+        </div>
+        <div class="col-12 mb-5">
+            <div class="border-code">
+            <pre>
+            <code>
+    &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Strict//EN&quot; 
+    &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd&quot;&gt;
+    &lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+        &lt;head&gt;
+            &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+            &lt;title&gt;Пример 3&lt;/title&gt;
+            &lt;style type=&quot;text/css&quot;&gt;
+                @media screen { /* Стиль для отображения в браузере */
+                    body {
+                        font-family: Arial, Verdana, sans-serif; /* Рубленый шрифт */
+                        font-size: 0.9em; /* Размер шрифта */
+                        color: #804900; /* Цвет текста */
+                    }
+                    h1 {
+                        background: #faf0e6; /* Цвет фона под текстом */
+                        border: 2px dashed #ff9a9a; /* Рамка вокруг заголовка */
+                        color: #2a9939; /* Цвет текста */
+                        padding: 7px; /* Поля вокруг текста */
+                    }
+                    h2 {
+                        color: #3b2a86; /* Цвет текста */
+                        margin: 0; /* Убираем отступы */
+                    }
+                    p {
+                        margin-top: 0.5em; /* Отступ сверху */
+                    }
+                }
+                @media print { /* Стиль для печати */
+                    body {
+                        font-family: Times, 'Times New Roman', serif; /* Шрифт с засечками */
+                    }
+                    h1, h2, p {
+                        color: #000; /* Черный цвет текста */
+                    }
+                }
+            &lt;/style&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1&gt;Апостериори&lt;/h1&gt;
+            &lt;h2&gt;гравитационный парадокс&lt;/h2&gt;
+            &lt;p&gt; Интеллект естественно понимает под собой интеллигибельный закон внешнего мира, открывая новые горизонты. Дискретность амбивалентно
+            транспонирует гравитационный парадокс. Отсюда естественно следует, что автоматизация дискредитирует предмет деятельности. Согласно
+            мнению известных философов, дедуктивный метод естественно порождает и обеспечивает мир, tertium nоn datur.&lt;/p&gt;
+            &lt;p&gt;Созерцание непредсказуемо. Аксиома силлогизма, по определению, представляет собой неоднозначный предмет деятельности.
+            Гедонизм осмысляет дедуктивный метод. Надстройка нетривиальна. Дедуктивный метод решительно представляет собой бабувизм. Структурализм
+            абстрактен&lt;/p&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;</code>
+            </pre>
+            </div>
+            <a href="#nul" onclick="window.open('examples/example_3.html ','','Width=550,Height=400');">
+                <button type="button" class="btn btn-success text-left ml-3">
+                    Открыть
+                </button>
+            </a>
+        </div>
+    </div>
+    <hr>
+    <div class="mr-5 ml-5 mt-4">
+        <div class="row alert">
+            <div class="col-12 text-justify">
+                <h4 class="padb font-italic hreffix" id="max-width_ex">Пример 4. Использование max-width</h4>
+                <p class="lead">При уменьшении окна до 600 пикселов и меньше меняется цвет фона веб-страницы:</p>
+            </div>
+        </div>
+        <div class="col-12 mb-5">
+            <div class="border-code">
+            <pre>
+            <code>
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+        &lt;head&gt;
+            &lt;meta charset=&quot;utf-8&quot;&gt;
+            &lt;title&gt;Пример 4&lt;/title&gt;
+            &lt;style&gt;
+                body { background: #ffe693; }
+                @media screen and (max-width: 600px) {
+                    body { background: rgb(255, 0, 76); }
+                }
+            &lt;/style&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;p&gt;Структурализм абстрактен. Надстройка нетривиальна. Согласно мнению известных философов, дедуктивный метод естественно порождает и
+            обеспечивает мир, tertium nоn datur. Надстройка нетривиальна. Апостериори, гравитационный парадокс амбивалентно понимает под собой
+            интеллигибельный знак. Интеллект естественно понимает под собой интеллигибельный закон внешнего мира, открывая новые горизонты.  &lt;/p&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;</code>
+            </pre>
+            </div>
+            <a href="#nul" onclick="window.open('examples/example_4.html ','','Width=550,Height=400');">
+                <button type="button" class="btn btn-success text-left ml-3">
+                    Открыть
+                </button>
+            </a>
+        </div>
+    </div>
+    <hr>
+    <div class="mr-5 ml-5 mt-4">
+        <div class="row alert">
+            <div class="col-12 text-justify">
+                <h4 class="padb font-italic hreffix" id="hiding_items_ex">Пример 5. Скрытие элементов медиа-запросов</h4>
+                <p class="lead">Если размер экрана 600 пикселей в ширину или меньше, скроется элемент:</p>
+            </div>
+        </div>
+        <div class="col-12 mb-5">
+            <div class="border-code">
+                <pre>
+                <code>
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+        &lt;head&gt;
+            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+            &lt;title&gt;Пример 5&lt;/title&gt;
+            &lt;style&gt;
+                div.example {
+                    background-color: rgb(119, 255, 187);
+                    padding: 20px;
+                }
+                
+                @media screen and (max-width: 600px) {
+                    v.example {
+                        display: none;
+                    }
+                }
+            &lt;/style&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1&gt;Дедуктивный метод решительно представляет собой бабувизм.&lt;/h1&gt;
+            &lt;div class=&quot;example&quot;&gt;Апостериори.&lt;/div&gt;
+            &lt;p&gt;Гравитационный парадокс амбивалентно понимает под собой интеллигибельный знак. Дедуктивный метод решительно представляет собой
+            бабувизм. Гедонизм осмысляет дедуктивный метод. Интеллект естественно понимает под собой интеллигибельный закон внешнего мира, открывая
+            новые горизонты.&lt;/p&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;</code>
+                </pre>
+            </div>
+            <a href="#nul" onclick="window.open('examples/example_5.html ','','Width=550,Height=400');">
+                <button type="button" class="btn btn-success text-left ml-3">
+                    Открыть
+                </button>
+            </a>
+        </div>
+    </div>
+    <hr>
+    <div class="mr-5 ml-5 mt-4">
+        <div class="row alert">
+            <div class="col-12 text-justify">
+                <h4 class="padb font-italic hreffix" id="change_font_ex">Пример 6. Изменение размера шрифта</h4>
+                <p class="lead">Если размер экрана более 600 пикселей в ширину, устанавливается размер шрифта &lt;div&gt;
+                    в 80 пикселей, а если размер экрана 600px широкий, или меньше, установите размер шрифта &lt;div&gt;
+                    в 30px:</p>
+            </div>
+        </div>
+        <div class="col-12 mb-5">
+            <div class="border-code">
+            <pre>
+            <code>
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+        &lt;head&gt;
+            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+            &lt;title&gt;Пример 6&lt;/title&gt;
+            &lt;style&gt;
+                div.example {
+                    background-color: rgb(255, 203, 203);
+                    padding: 20px;
+                }
+
+                @media screen and (min-width: 600px) {
+                    div.example {
+                    font-size: 80px;
+                    }
+                }
+
+                @media screen and (max-width: 600px) {
+                    div.example {
+                    font-size: 30px;
+                    }
+                }
+            &lt;/style&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;div class=&quot;example&quot;&gt;Аксиома силлогизма.&lt;/div&gt;
+            &lt;p&gt;Дедуктивный метод решительно представляет собой бабувизм. Смысл жизни, следовательно, творит данный закон внешнего мира. Аксиома
+            силлогизма, по определению, представляет собой неоднозначный предмет деятельности. &lt;/p&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;</code>
+            </pre>
+            </div>
+            <a href="#nul" onclick="window.open('examples/example_6.html ','','Width=550,Height=400');">
+                <button type="button" class="btn btn-success text-left ml-3">
+                    Открыть
+                </button>
+            </a>
+        </div>
+    </div>
+    <hr>
+    <div class="mr-5 ml-5 mt-4">
+        <div class="row alert">
+            <div class="col-12 text-justify">
+                <h4 class="padb font-italic hreffix" id="orientation_ex">Пример 7. Ориентация: книжная/альбомная</h4>
+                <p class="lead">Если будет использоваться альбомный режим - изменится цвет фона:</p>
+            </div>
+        </div>
+        <div class="col-12 mb-5">
+            <div class="border-code">
+            <pre>
+            <code>
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+        &lt;head&gt;
+            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+            &lt;title&gt;Пример 7&lt;/title&gt;
+            &lt;style&gt;
+                body {
+                    background-color: rgb(244, 255, 147);
+                }
+                
+                @media only screen and (orientation: landscape) {
+                    body {
+                        background-color: rgb(212, 118, 255);
+                    }
+                }
+            &lt;/style&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1&gt;Смысл жизни&lt;/h1&gt;
+            &lt;p&gt;творит данный закон внешнего мира. Гедонизм осмысляет дедуктивный метод. Согласно мнению известных философов, дедуктивный метод
+            естественно порождает и обеспечивает мир, tertium nоn datur.&lt;/p&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;</code>
+            </pre>
+            </div>
+            <a href="#nul" onclick="window.open('examples/example_7.html ','','Width=550,Height=400');">
+                <button type="button" class="btn btn-success text-left ml-3">
+                    Открыть
+                </button>
+            </a>
+        </div>
+    </div>
+    <hr>
+    <div class="mr-5 ml-5 mt-4">
+        <div class="row alert">
+            <div class="col-12 text-justify">
+                <h4 class="padb font-italic hreffix" id="from_and_to_width_change_ex">Пример 8. Минимальная ширина и
+                    максимальная ширина</h4>
+                <p class="lead">Если ширина браузера составляет от 600 до 900px, измените внешний вид элемента &lt;div&gt;:</p>
+            </div>
+        </div>
+        <div class="col-12 mb-5">
+            <div class="border-code">
+            <pre>
+            <code>
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+        &lt;head&gt;
+            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;
+            &lt;title&gt;Пример 8&lt;/title&gt;
+            &lt;style&gt;
+                @media screen and (max-width: 900px) and (min-width: 600px) {
+                    div.example {
+                        font-size: 50px;
+                        padding: 50px;
+                        border: 8px solid rgb(116, 116, 116);
+                        background: rgb(255, 209, 182);
+                    }
+                }
+            &lt;/style&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1&gt;Дискретность амбивалентно транспонирует.&lt;/h1&gt;
+            &lt;div class=&quot;example&quot;&gt;Интеллект естественно.&lt;/div&gt;
+            &lt;p&gt;понимает под собой интеллигибельный закон внешнего мира, открывая новые горизонты. Отсюда естественно следует, что автоматизация
+            дискредитирует предмет деятельности.&lt;strong&gt;Гедонизм осмысляет дедуктивный метод. Интеллект естественно понимает под собой
+            интеллигибельный закон внешнего мира, открывая новые горизонты.&lt;/strong&gt;&lt;/p&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;</code>
+        </pre>
+            </div>
+            <a href="#nul" onclick="window.open('examples/example_8.html ','','Width=550,Height=400');">
+                <button type="button" class="btn btn-success text-left ml-3">
+                    Открыть
+                </button>
+            </a>
+        </div>
+    </div>
+    <hr>
+    <!--Кнопки-->
+    <div class="pl-3 d-flex justify-content-between pb-4 font-sz">
+        <a href="variables.html">
+            <button class="btn btn-dark btn-lg" type="button">Переменные</button>
+        </a>
+    </div>
+</div>
+<!--Футер-->
+<footer class="container-fluid">
+    <div class="container-fluid">
+        <div class="row padding text-center">
+            <div class="col-12">
+                <h2>Контакты</h2>
+            </div>
+            <div class="col-12 social padding">
+                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://myaccount.google.com/" target="_blank"><i class="fab fa-google-plus-g"></i></a>
+            </div>
+            <hr>
+            <div class="col-12">
+                <h6>2020 Денис Чахальян, по всем вопросам пишите по адресу
+                    denys.chakhalian@nure.ua</h6>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    let btnTop = document.getElementById("top");
+
+    window.onscroll = function () {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            btnTop.style.display = "block";
+        } else {
+            btnTop.style.display = "none";
+        }
+    }
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+</body>
+</html>

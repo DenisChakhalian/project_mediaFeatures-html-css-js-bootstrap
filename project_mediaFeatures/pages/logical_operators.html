@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Логические операторы</title>
+    <link rel="icon" href="../img/icon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<!--Скролл-->
+<div id="top" class="mr-3 mb-3">
+    <a href="#">
+        <img src="../img/up.png" alt="Вверх">
+    </a>
+</div>
+<!--Навигация-->
+<nav class="navbar navbar-expand-xl navbar-dark bg-dark sticky-top position-fixed">
+    <div class="container-fluid">
+        <a href="../index.html" class="navbar-brand"><img src="../img/logo.png" alt="logo"></a>
+        <button class=" navbar-toggler" type="button" data-toggle="collapse" data-target="#ResponsiveNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="ResponsiveNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a href="syntax.html" class="nav-link">Синтаксис</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="#" class="nav-link">Логические операторы</a>
+                </li>
+                <li class="nav-item">
+                    <a href="variables.html" class="nav-link">Переменные</a>
+                </li>
+                <li class="nav-item">
+                    <a href="examples.html" class="nav-link">Примеры</a>
+                </li>
+                <li class="nav-item">
+                    <a href="feedback.html" class="nav-link">Обратная связь</a>
+                </li>
+                <li class="nav-item">
+                    <a href="keywords.html" class="nav-link">Ключевые слова</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--Общий блок-->
+<div class="boxer mt-5">
+    <!--Первый блок-->
+    <div class="row alert">
+        <div class="col-12 text-center mt-4">
+            <h1 class="display-4">Логические операторы</h1>
+        </div>
+    </div>
+    <hr>
+    <!--Второй блок-->
+    <div class="col-12 text-center mt-4">
+        <h5>
+            Каждая медиа-функция проверяет одну особенность браузера или устройства.
+        </h5>
+    </div>
+    <!--Таблица описания-->
+    <div class="pr-4 pl-4 pb-1 padding-off">
+        <table class="table table-bordered table-responsive">
+            <caption class="text-left font-italic">Логические операторы и их описание</caption>
+            <thead class="text-center table-dark">
+            <tr>
+                <th>Имя</th>
+                <th>Описание</th>
+                <th>Примечание</th>
+            </tr>
+            </thead>
+            <tbody class="text-left">
+            <tr>
+                <td><code id="width_des" class="hreffix">width</code></td>
+                <td>Ширина области просмотра.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><code id="height_des" class="hreffix">height</code></td>
+                <td>Высота окна просмотра.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><code id="aspect-ratio_des" class="hreffix">aspect-ratio</code></td>
+                <td>Соотношение ширины к высоте в области просмотра.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><code id="orientation_des" class="hreffix">orientation</code></td>
+                <td>Ориентация области просмотра.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><code id="resolution_des" class="hreffix">resolution</code></td>
+                <td>Плотность пикселей устройства вывода.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><code id="scan_des" class="hreffix">scan</code></td>
+                <td>Процесс сканирования выходного устройства.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><code id="grid_des" class="hreffix">grid</code></td>
+                <td>Является ли устройство сеткой или растровым изображением?</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><code id="update-frequency_des" class="hreffix">update-frequency</code></td>
+                <td>Как быстро (если это вообще возможно) устройство вывода может изменить внешний вид контента.</td>
+                <td>Добавлено в Media Queries Level 4.</td>
+            </tr>
+            <tr>
+                <td><code id="overflow-block_des" class="hreffix">overflow-block</code></td>
+                <td>Как устройство вывода обрабатывает контент, который выходит за пределы области просмотра вдоль оси
+                    блока?
+                </td>
+                <td>Добавлено в Media Queries Level 4.</td>
+            </tr>
+            <tr>
+                <td><code id="overflow-inline_des" class="hreffix">overflow-inline</code></td>
+                <td>Можно ли прокрутить содержимое, которое выходит за пределы области просмотра вдоль встроенной оси?
+                </td>
+                <td>Добавлено в Media Queries Level 4.</td>
+            </tr>
+            <tr>
+                <td><code id="color_des" class="hreffix">color</code></td>
+                <td>Количество бит на компонент цвета устройства вывода или ноль, если устройство не является цветом.
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><code id="color-index_des" class="hreffix">color-index</code></td>
+                <td>Количество записей в таблице соответствия цветов устройства вывода или ноль, если устройство не
+                    использует такую ​​таблицу.
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><code id="display-mode_des" class="hreffix">display-mode</code></td>
+                <td>Режим отображения приложения, указанный в элементе отображения manifest веб-приложения.</td>
+                <td>Определяется в спецификации manifest веб-приложения</td>
+            </tr>
+            <tr>
+                <td><code id="monochrome_des" class="hreffix">monochrome</code></td>
+                <td>Биты на пиксель в монохромном кадровом буфере устройства вывода или 0, если устройство не
+                    монохромное.
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><code id="inverted-colors_des" class="hreffix">inverted-colors</code></td>
+                <td>Пользователь или базовая ОС инвертируют цвета?</td>
+                <td>Добавлено в Media Queries Level 4.</td>
+            </tr>
+            <tr>
+                <td><code id="pointer_des" class="hreffix">pointer</code></td>
+                <td>Является ли основной механизм ввода указательным устройством, и если да, то насколько он точен?</td>
+                <td>Добавлено в Media Queries Level 4.</td>
+            </tr>
+            <tr>
+                <td><code class="hreffix" id="hover_des">hover</code></td>
+                <td>Позволяет ли основной механизм ввода пользователю наводить курсор на элементы?</td>
+                <td>Добавлено в Media Queries Level 4.</td>
+            </tr>
+            <tr>
+                <td><code id="any-pointer_des" class="hreffix">any-pointer</code></td>
+                <td>Является ли какой-либо доступный механизм ввода указательным устройством, и если да, то насколько он
+                    точен?
+                </td>
+                <td>Добавлено в Media Queries Level 4.</td>
+            </tr>
+            <tr>
+                <td><code id="any-hover_des" class="hreffix">any-hover</code></td>
+                <td>Любой доступный механизм ввода позволяет пользователю наводить курсор на элементы?</td>
+                <td>Добавлено в Media Queries Level 4.</td>
+            </tr>
+            <tr>
+                <td><code id="light-level_des" class="hreffix">light-level</code></td>
+                <td>Текущий уровень освещенности.</td>
+                <td>Добавлено в Media Queries Level 4.</td>
+            </tr>
+            <tr>
+                <td><code id="scripting_des hreffix" class="hreffix">scripting</code></td>
+                <td>Доступны ли скрипты (например, JavaScript)?</td>
+                <td>Добавлено в Media Queries Level 4.</td>
+            </tr>
+            <tr>
+                <td class="table-danger"><code class="hreffix" id="device-width_des">device-width</code></td>
+                <td>Ширина поверхности рендеринга устройства вывода.</td>
+                <td>Устаревшее в Media Queries Level 4.</td>
+            </tr>
+            <tr>
+                <td class="table-danger"><code class="hreffix" id="device-height_des">device-height</code></td>
+                <td>Высота рендеринга поверхности устройства вывода.</td>
+                <td>Устаревшее в Media Queries Level 4.</td>
+            </tr>
+            <tr>
+                <td class="table-danger"><code class="hreffix" id="device-aspect-ratio_des">device-aspect-ratio</code></td>
+                <td>Соотношение ширины к высоте устройства вывода.</td>
+                <td>Устаревшее в Media Queries Level 4.</td>
+            </tr>
+            <tr>
+                <td class="table-warning"><code class="hreffix" id="-webkit-device-pixel-ratio_des">-webkit-device-pixel-ratio</code>
+                </td>
+                <td>Количество пикселей физического устройства на пиксель CSS.</td>
+                <td>Нестандартное; Если возможно, используйте вместо этого функцию <code>transform</code>.</td>
+            </tr>
+            <tr>
+                <td class="table-warning"><code class="hreffix" id="-webkit-transform-3d_des">-webkit-transform-3d</code>
+                </td>
+                <td>Поддерживает ли CSS 3D <code>transform</code>?</td>
+                <td>Нестандартное; WebKit/Blink-specific.</td>
+            </tr>
+            <tr>
+                <td class="table-warning"><code class="hreffix" id="-webkit-transform-2d_des">-webkit-transform-2d</code>
+                </td>
+                <td>Поддерживает ли CSS 2D <code>transform</code>?</td>
+                <td>Нестандартное; WebKit-specific.</td>
+            </tr>
+            <tr>
+                <td class="table-warning"><code class="hreffix" id="-webkit-transition_des">-webkit-transition</code>
+                </td>
+                <td>Поддерживает ли CSS <code>transition</code>?</td>
+                <td>Нестандартное; WebKit-specific.</td>
+            </tr>
+            <tr>
+                <td class="table-warning"><code class="hreffix" id="-webkit-animation_des">-webkit-animation</code>
+                </td>
+                <td>Поддерживает ли CSS <code>animation</code>?</td>
+                <td>Нестандартное; WebKit-specific.</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <hr>
+    <!--Кнопки-->
+    <div class="container-fluid">
+        <div class="ml-auto d-flex justify-content-between pb-4 font-sz">
+            <a href="syntax.html">
+                <button class="btn btn-dark btn-lg" type="button">Синтаксис</button>
+            </a>
+            <a href="variables.html">
+                <button class="btn btn-dark btn-lg" type="button">Переменные</button>
+            </a>
+        </div>
+    </div>
+</div>
+<!--Футер-->
+<footer class="container-fluid">
+    <div class="container-fluid">
+        <div class="row padding text-center">
+            <div class="col-12">
+                <h2>Контакты</h2>
+            </div>
+            <div class="col-12 social padding">
+                <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://myaccount.google.com/" target="_blank"><i class="fab fa-google-plus-g"></i></a>
+            </div>
+            <hr>
+            <div class="col-12">
+                <h6>2020 Денис Чахальян, по всем вопросам пишите по адресу
+                    denys.chakhalian@nure.ua</h6>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    let btnTop = document.getElementById("top");
+
+    window.onscroll = function () {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            btnTop.style.display = "block";
+        } else {
+            btnTop.style.display = "none";
+        }
+    }
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+</body>
+</html>
