@@ -1,5 +1,7 @@
 # project_mediaFeatures (html, css, js, bootstrap)
 
+### Development was carried out until May 18 2020
+
 site link: https://project-mediafeatures.web.app/
 
 how to open locally:
